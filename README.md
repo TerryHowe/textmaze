@@ -1,3 +1,6 @@
+[![NPM](https://nodei.co/npm/textmaze.png?downloads=true)](https://nodei.co/npm/textmaze/)
+
+
 Installation
 ============
 

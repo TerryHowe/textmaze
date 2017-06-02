@@ -282,7 +282,6 @@ exports.TextMaze = class TextMaze {
     let zip= rows=>rows[0].map((_,c)=>rows.map(row=>row[c]))
     let z = zip(t);
     let result = z.map(row => {return row.reduce((a,b) => {return a>b?a:b;})});
-    this.header = direction + " from " + room.getKey();
     return(result.join(""));
   }
 
@@ -308,65 +307,5 @@ exports.TextMaze = class TextMaze {
       return;
     }
     return;
-  }
-
-  goForward() {
-    let room = this.getRoom();
-    if (typeof room === 'undefined') {
-      return;
-    }
-    let destination = room.goForward(this.direction)
-    if (typeof destination === 'undefined') {
-      return;
-    }
-    this.x = destination.x;
-    this.y = destination.y;
-  }
-
-  goBackward() {
-    let room = this.getRoom();
-    if (typeof room === 'undefined') {
-      return;
-    }
-    let destination = room.goBackward(this.direction)
-    if (typeof destination === 'undefined') {
-      return;
-    }
-    this.x = destination.x;
-    this.y = destination.y;
-  }
-
-  goLeft() {
-    switch (this.direction) {
-    case 'N':
-      this.direction = 'W';
-      break;
-    case 'E':
-      this.direction = 'N';
-      break;
-    case 'S':
-      this.direction = 'E';
-      break;
-    default:
-      this.direction = 'S';
-      break;
-    }
-  }
-
-  goRight() {
-    switch (this.direction) {
-    case 'N':
-      this.direction = 'E';
-      break;
-    case 'E':
-      this.direction = 'S';
-      break;
-    case 'S':
-      this.direction = 'W';
-      break;
-    default:
-      this.direction = 'N';
-      break;
-    }
   }
 }

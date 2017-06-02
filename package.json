@@ -1,0 +1,24 @@
+{
+  "name": "textmaze",
+  "version": "1.0.0",
+  "description": "Text 3D Maze Rendering",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TerryHowe/textmaze.git"
+  },
+  "keywords": [
+    "text",
+    "3D",
+    "maze"
+  ],
+  "author": "Terry Howe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TerryHowe/textmaze/issues"
+  },
+  "homepage": "https://github.com/TerryHowe/textmaze#readme"
+}

@@ -30,3 +30,27 @@ class Room {
      goRight(direction) {};
 }
 ```
+
+The rendered maze will look something like:
+
+
+                                   /
+                                  / 
+    --+                          +  
+      |\                        /|  
+      | \                      / |  
+      |  +                    +  |  
+      |  |                    |  |  
+      |  |                    |  |  
+      |  |                    |  |  
+      |  |                    |  |  
+      |  |                    |  |  
+      |  |                    |  |  
+      |  |                    |  |  
+      |  +                    +  |  
+      | /                      \ |  
+      |/                        \|  
+    --+                          +  
+                                  \ 
+                                   \
+
